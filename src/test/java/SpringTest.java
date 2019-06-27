@@ -7,14 +7,15 @@
  */
 
 import org.junit.runner.RunWith;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import spring.config.SpringConfiguration;
-import spring.dao.AccountDao;
 import spring.domain.Account;
 import org.junit.Test;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import spring.factory.BeanFactory;
+import spring.service.AccountService;
+import spring.service.AccountServiceImpl;
+import spring.utils.ThreadLocalUtils;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -27,19 +28,23 @@ public class SpringTest {
 
     // 使用xml配置
     // private ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("bean.xml");
-    // private AccountDao accountDao = classPathXmlApplicationContext.getBean("accountDao", AccountDao.class);
+    // private AccountDao accountService = classPathXmlApplicationContext.getBean("accountService", AccountDao.class);
 
     // 使用类配置
     // private AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfiguration.class);
-    // private AccountDao accountDao = ac.getBean("accountDao", AccountDao.class);
+    // private AccountDao accountService = ac.getBean("accountService", AccountDao.class);
 
     // junit环境下
-    @Resource(name = "accountDao")
-    private AccountDao accountDao;
+    @Resource(name = "accountService")
+    private AccountService accountService;
+    @Resource(name = "threadLocalUtils")
+    private ThreadLocalUtils threadLocalUtils;
+    @Resource(name = "beanFactory")
+    private BeanFactory beanFactory;
 
     @Test
     public void findAll() {
-        List<Account> accounts = accountDao.findAll();
+        List<Account> accounts = accountService.findAll();
         for (Account account : accounts) {
             System.out.println(account);
         }
@@ -47,28 +52,15 @@ public class SpringTest {
 
     @Test
     public void findOne() {
-        Account account = accountDao.findById(3);
+        Account account = accountService.findById(3);
         System.out.println(account);
     }
 
     @Test
-    public void insert() {
-        Account account = new Account();
-        account.setMoney(450);
-        account.setUser_id(2);
-        accountDao.insertAccount(account);
-    }
-
-    @Test
-    public void delete() {
-        accountDao.deleteAccount(6);
-    }
-
-    @Test
-    public void update() {
-        Account account = new Account();
-        account.setId(6);
-        account.setMoney(650);
-        accountDao.updateAccount(account);
+    public void transactionAmount() {
+        // accountService.transactionAmount(5, 6, 100);
+        // 创建代理对象
+        AccountService accountService = beanFactory.getProxyAccountService();
+        accountService.transactionAmount(5, 6, 100);
     }
 }

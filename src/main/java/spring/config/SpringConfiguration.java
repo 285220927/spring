@@ -18,6 +18,7 @@ import org.springframework.context.annotation.PropertySource;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
+import java.sql.Connection;
 
 @ComponentScan(basePackages = "spring")
 @PropertySource("classpath:jdbcConfig.properties")
@@ -35,11 +36,11 @@ public class SpringConfiguration {
     private String Password;
 
     @Bean(name = "runner")
-    public QueryRunner runner(@Qualifier("ds") DataSource dataSource) {
+    public QueryRunner runner(@Qualifier("dataSource") DataSource dataSource) {
         return new QueryRunner(dataSource);
     }
 
-    @Bean(name = "ds")
+    @Bean(name = "dataSource")
     public DataSource dataSource() {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         try {
@@ -51,5 +52,10 @@ public class SpringConfiguration {
         dataSource.setUser(Un);
         dataSource.setPassword(Password);
         return dataSource;
+    }
+
+    @Bean(name = "threadLocal")
+    public ThreadLocal<Connection> getThreadLocal() {
+        return new ThreadLocal<Connection>();
     }
 }

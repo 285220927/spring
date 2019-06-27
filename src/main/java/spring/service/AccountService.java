@@ -17,9 +17,7 @@ public interface AccountService {
 
     Account findById(int id);
 
-    void insertAccount(Account account);
-
-    void deleteAccount(int id);
-
     void updateAccount(Account account);
+
+    void transactionAmount(int sourceId, int targetId, double money);
 }

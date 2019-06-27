@@ -13,6 +13,7 @@ import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.springframework.stereotype.Repository;
+import spring.utils.ThreadLocalUtils;
 
 import javax.annotation.Resource;
 import java.sql.SQLException;
@@ -22,6 +23,8 @@ import java.util.List;
 public class AccountDaoImpl implements AccountDao {
     @Resource(name = "runner")
     private QueryRunner runner;
+    @Resource(name = "threadLocalUtils")
+    private ThreadLocalUtils threadLocalUtils;
 
     public void setRunner(QueryRunner runner) {
         this.runner = runner;
@@ -29,7 +32,7 @@ public class AccountDaoImpl implements AccountDao {
 
     public List<Account> findAll() {
         try {
-            return runner.query("select * from account", new BeanListHandler<Account>(Account.class));
+            return runner.query(threadLocalUtils.getConnection(), "select * from account", new BeanListHandler<Account>(Account.class));
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
@@ -38,32 +41,16 @@ public class AccountDaoImpl implements AccountDao {
 
     public Account findById(int id) {
         try {
-            return runner.query("select * from account where id = ?", new BeanHandler<Account>(Account.class), id);
+            return runner.query(threadLocalUtils.getConnection(), "select * from account where id = ?", new BeanHandler<Account>(Account.class), id);
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
         }
     }
 
-    public void insertAccount(Account account) {
-        try {
-            runner.update("insert into account(money, user_id) values(?, ?)", account.getMoney(), account.getUser_id());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void deleteAccount(int id) {
-        try {
-            runner.update("delete from account where id = ?", id);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
     public void updateAccount(Account account) {
         try {
-            runner.update("update account set money = ? where id = ?", account.getMoney(), account.getId());
+            runner.update(threadLocalUtils.getConnection(), "update account set money = ? where id = ?", account.getMoney(), account.getId());
         } catch (SQLException e) {
             e.printStackTrace();
         }

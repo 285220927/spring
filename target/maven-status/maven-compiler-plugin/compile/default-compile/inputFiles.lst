@@ -1,6 +1,10 @@
 /home/python/IdeaProjects/springTest_maven/src/main/java/spring/service/AccountServiceImpl.java
 /home/python/IdeaProjects/springTest_maven/src/main/java/spring/config/SpringConfiguration.java
 /home/python/IdeaProjects/springTest_maven/src/main/java/spring/dao/AccountDao.java
+/home/python/IdeaProjects/springTest_maven/src/main/java/spring/factory/BeanFactory.java
 /home/python/IdeaProjects/springTest_maven/src/main/java/spring/domain/Account.java
+/home/python/IdeaProjects/springTest_maven/src/main/java/aop/AccountTest.java
+/home/python/IdeaProjects/springTest_maven/src/main/java/spring/utils/ThreadLocalUtils.java
+/home/python/IdeaProjects/springTest_maven/src/main/java/spring/utils/TransactionManager.java
 /home/python/IdeaProjects/springTest_maven/src/main/java/spring/service/AccountService.java
 /home/python/IdeaProjects/springTest_maven/src/main/java/spring/dao/AccountDaoImpl.java

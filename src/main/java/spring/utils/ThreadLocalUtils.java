@@ -8,7 +8,12 @@
 
 package spring.utils;
 
+import org.apache.commons.dbutils.QueryRunner;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.test.context.ContextConfiguration;
+import spring.config.SpringConfiguration;
+import spring.domain.Account;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
@@ -17,15 +22,21 @@ import java.sql.SQLException;
 
 @Component("threadLocalUtils")
 public class ThreadLocalUtils {
-    @Resource(name = "threadLocal")
-    private ThreadLocal<Connection> threadLocal;
+    private ThreadLocal<Connection> threadLocal = new ThreadLocal<Connection>();
     @Resource(name = "dataSource")
     private DataSource dataSource;
-    private Connection conn;
+
+    public void setThreadLocal(ThreadLocal<Connection> threadLocal) {
+        this.threadLocal = threadLocal;
+    }
+
+    public void setDataSource(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
     public Connection getConnection() {
         try {
-            conn = threadLocal.get();
+            Connection conn = threadLocal.get();
             if (conn == null) {
                 conn = dataSource.getConnection();
                 threadLocal.set(conn);

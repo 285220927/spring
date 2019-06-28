@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="018526c6-f762-4978-96bf-990afbe718fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/aop/AccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aop/dao/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aop/dao/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/aopBean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AopTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/config/SpringConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/config/SpringConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/factory/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/service/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/utils/ThreadLocalUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/utils/ThreadLocalUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/utils/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/utils/TransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SpringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/config/SpringConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/config/SpringConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/factory/BeanFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/factory/BeanFactory.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spring/service/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/service/AccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/utils/TransactionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/utils/TransactionManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SpringTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SpringTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,30 +33,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/aop/AccountTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spring/utils/TransactionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AopTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="277">
+              <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,10 +45,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/aopBean.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spring/utils/ThreadLocalUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state relative-caret-position="356">
+              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/AccountDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SpringTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="24" column="60" lean-forward="true" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/bean.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -94,30 +119,30 @@
         <option value="$PROJECT_DIR$/src/main/java/dao/AccountDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/AccountDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/bean.xml" />
         <option value="$PROJECT_DIR$/src/main/java/spring/config/SpriingConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbcConfig.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/config/SpringConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/service/AccountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/dao/AccountDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/TransactionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ConnectionUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/utils/ThreadLocalUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/utils/TransactionManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/AccountServiceImpl_OLD.java" />
         <option value="$PROJECT_DIR$/src/main/java/IAccountDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/AccountDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/spring/dao/AccountDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/factory/BeanFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/service/AccountServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SpringTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/aop/dao/AccountDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/aop/AccountTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/aop/dao/AccountDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/AopTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/aopBean.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/factory/BeanFactory.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/utils/TransactionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/service/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/config/SpringConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/bean.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/SpringTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/utils/ThreadLocalUtils.java" />
       </list>
     </option>
   </component>
@@ -156,7 +181,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,7 +212,43 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springTest_maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springTest_maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springTest_maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springTest_maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springTest_maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springTest_maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springTest_maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springTest_maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springTest_maven" type="b2602c69:ProjectViewProjectNode" />
@@ -214,6 +274,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,16 +309,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AopTest">
+  <component name="RunManager" selected="JUnit.SpringTest.transactionAmount">
     <configuration name="AopTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AopTest" />
-      <module name="springTest_maven" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringTest" />
       <module name="springTest_maven" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -283,6 +337,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springTest_maven" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SpringTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringTest.transactionAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springTest_maven" />
       <option name="PACKAGE_NAME" value="" />
@@ -295,11 +359,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringTest.transactionAmount" />
+        <item itemvalue="JUnit.SpringTest.findAll" />
         <item itemvalue="Application.AopTest" />
         <item itemvalue="JUnit.AopTest.test" />
         <item itemvalue="JUnit.AopTest.aopTest" />
-        <item itemvalue="JUnit.SpringTest.transactionAmount" />
-        <item itemvalue="Application.SpringTest" />
       </list>
     </recent_temporary>
   </component>
@@ -317,49 +381,50 @@
       <workItem from="1561465999933" duration="6450000" />
       <workItem from="1561554807091" duration="361000" />
       <workItem from="1561637849584" duration="13222000" />
+      <workItem from="1561724189055" duration="5805000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AopTest_aopTest - 2019.06.27 at 08h 55m 20s.xml">
-      <configuration name="AopTest.aopTest" configurationId="JUnit" />
+    <history-entry file="SpringTest_transactionAmount - 2019.06.28 at 07h 22m 39s.xml">
+      <configuration name="SpringTest.transactionAmount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AopTest_aopTest - 2019.06.27 at 09h 01m 44s.xml">
-      <configuration name="AopTest.aopTest" configurationId="JUnit" />
+    <history-entry file="SpringTest_transactionAmount - 2019.06.28 at 07h 24m 57s.xml">
+      <configuration name="SpringTest.transactionAmount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AopTest_aopTest - 2019.06.27 at 09h 02m 35s.xml">
-      <configuration name="AopTest.aopTest" configurationId="JUnit" />
+    <history-entry file="SpringTest_transactionAmount - 2019.06.28 at 07h 25m 12s.xml">
+      <configuration name="SpringTest.transactionAmount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AopTest_aopTest - 2019.06.27 at 09h 03m 10s.xml">
-      <configuration name="AopTest.aopTest" configurationId="JUnit" />
+    <history-entry file="SpringTest_transactionAmount - 2019.06.28 at 07h 28m 38s.xml">
+      <configuration name="SpringTest.transactionAmount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AopTest_aopTest - 2019.06.27 at 09h 08m 06s.xml">
-      <configuration name="AopTest.aopTest" configurationId="JUnit" />
+    <history-entry file="SpringTest_transactionAmount - 2019.06.28 at 07h 28m 55s.xml">
+      <configuration name="SpringTest.transactionAmount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AopTest_aopTest - 2019.06.27 at 09h 11m 03s.xml">
-      <configuration name="AopTest.aopTest" configurationId="JUnit" />
+    <history-entry file="SpringTest_transactionAmount - 2019.06.28 at 07h 29m 19s.xml">
+      <configuration name="SpringTest.transactionAmount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AopTest_aopTest - 2019.06.27 at 09h 13m 36s.xml">
-      <configuration name="AopTest.aopTest" configurationId="JUnit" />
+    <history-entry file="SpringTest_transactionAmount - 2019.06.28 at 07h 38m 54s.xml">
+      <configuration name="SpringTest.transactionAmount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AopTest_aopTest - 2019.06.27 at 09h 20m 43s.xml">
-      <configuration name="AopTest.aopTest" configurationId="JUnit" />
+    <history-entry file="SpringTest_transactionAmount - 2019.06.28 at 07h 41m 18s.xml">
+      <configuration name="SpringTest.transactionAmount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AopTest_test - 2019.06.27 at 09h 31m 23s.xml">
-      <configuration name="AopTest.test" configurationId="JUnit" />
+    <history-entry file="SpringTest_transactionAmount - 2019.06.28 at 07h 48m 02s.xml">
+      <configuration name="SpringTest.transactionAmount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AopTest_test - 2019.06.27 at 09h 35m 57s.xml">
-      <configuration name="AopTest.test" configurationId="JUnit" />
+    <history-entry file="SpringTest_transactionAmount - 2019.06.28 at 07h 48m 36s.xml">
+      <configuration name="SpringTest.transactionAmount" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24547000" />
+    <option name="totallyTimeSpent" value="30352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20697288" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18760376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -368,7 +433,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35529158" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35529158" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -395,54 +460,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.4/commons-dbutils-1.4.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.4/commons-dbutils-1.4.jar!/org/apache/commons/dbutils/QueryRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/domain/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#306#307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar!/com/mchange/v2/c3p0/impl/PoolBackedDataSourceBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="29" column="63" lean-forward="true" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar!/com/mchange/v2/c3p0/impl/AbstractIdentityTokenized.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar!/com/mchange/v2/c3p0/impl/IdentityTokenized.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar!/com/mchange/v2/c3p0/impl/IdentityTokenResolvable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar!/com/mchange/v2/c3p0/impl/AbstractPoolBackedDataSource.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -492,73 +509,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/day03_eesy_01account/src/main/java/com/itheima/dao/impl/AccountDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/day03_eesy_01account/src/main/java/com/itheima/factory/BeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-          <folding>
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/day03_eesy_01account/src/main/resources/bean.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/day03_eesy_01account/src/main/java/com/itheima/utils/ConnectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConnectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TransactionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/day03_eesy_01account/src/main/java/com/itheima/dao/impl/AccountDaoImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/day03_eesy_01account/src/main/java/com/itheima/factory/BeanFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/day03_eesy_01account/src/main/resources/bean.xml" />
+    <entry file="file://$PROJECT_DIR$/src/day03_eesy_01account/src/main/java/com/itheima/utils/ConnectionUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConnectionUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/TransactionManager.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/AccountDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -569,131 +525,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_211/src.zip!/java/sql/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="262" column="9" selection-start-line="262" selection-start-column="9" selection-end-line="262" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AccountServiceImpl_OLD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IAccountDao.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AccountDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/AccountDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="52" column="60" lean-forward="true" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/utils/ThreadLocalUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#938#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/factory/BeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#899#1549#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#1845#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/utils/TransactionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SpringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1399">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/config/SpringConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bean.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AccountServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/AccountServiceImpl_OLD.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/IAccountDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/AccountDaoImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pom.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/aop/dao/AccountDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -701,64 +537,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/bean.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_04adviceType/src/main/java/com/itheima/service/IAccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_05annotationAOP/src/main/java/com/itheima/utils/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_05annotationAOP/src/main/java/com/itheima/service/impl/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_05annotationAOP/src/main/resources/bean.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_04adviceType/src/main/java/com/itheima/service/impl/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_04adviceType/src/test/java/com/itheima/test/AOPTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_04adviceType/src/main/java/com/itheima/utils/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_04adviceType/src/main/resources/bean.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/bean.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_04adviceType/src/main/java/com/itheima/service/IAccountService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_05annotationAOP/src/main/java/com/itheima/utils/Logger.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_05annotationAOP/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_05annotationAOP/src/main/resources/bean.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_04adviceType/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_04adviceType/src/test/java/com/itheima/test/AOPTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_04adviceType/src/main/java/com/itheima/utils/Logger.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/day03_eesy_04adviceType/src/main/resources/bean.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/aop/dao/AccountDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -769,28 +556,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/aop/AccountTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/AopTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="574">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AopTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/aop/AccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="330">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk1.8.0_211/src.zip!/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="221" column="9" selection-start-line="221" selection-start-column="9" selection-end-line="221" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/factory/BeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -799,8 +612,130 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/aopBean.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        <state>
+          <caret selection-end-line="10" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/day04_eesy_03account_aoptx_anno/src/main/java/com/itheima/dao/impl/AccountDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1915" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/day04_eesy_03account_aoptx_anno/src/main/java/com/itheima/dao/IAccountDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/day04_eesy_03account_aoptx_anno/src/main/java/com/itheima/utils/ConnectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/day04_eesy_03account_aoptx_anno/src/main/java/com/itheima/utils/TransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1683">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/day04_eesy_03account_aoptx_anno/src/main/resources/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/day04_eesy_03account_aoptx_anno/src/test/java/com/itheima/test/AccountServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk1.8.0_211/src.zip!/java/lang/ThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/service/AccountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/config/SpringConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#1706#1707#0" expanded="true" />
+            <element signature="e#1662#1663#0" expanded="true" />
+            <element signature="e#1714#1715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/dao/AccountDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/utils/TransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SpringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="24" column="60" lean-forward="true" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/utils/ThreadLocalUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

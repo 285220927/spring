@@ -21,10 +21,6 @@ import java.util.List;
 public class AccountServiceImpl implements AccountService {
     @Resource(name = "accountDao")
     private AccountDao accountDao;
-    @Resource(name = "transactionManager")
-    private TransactionManager transactionManager;
-    @Resource(name = "runner")
-    private QueryRunner runner;
 
     public void setAccountDao(AccountDao accountDao) {
         this.accountDao = accountDao;

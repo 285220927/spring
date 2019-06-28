@@ -7,12 +7,12 @@
  */
 
 import org.junit.runner.RunWith;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import spring.config.SpringConfiguration;
 import spring.domain.Account;
 import org.junit.Test;
-import spring.factory.BeanFactory;
 import spring.service.AccountService;
 import spring.service.AccountServiceImpl;
 import spring.utils.ThreadLocalUtils;
@@ -22,7 +22,8 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 // location用来指明xml配置，用classpath:bean.xml
-@ContextConfiguration(classes = SpringConfiguration.class)
+//@ContextConfiguration(classes = SpringConfiguration.class)
+@ContextConfiguration(locations = "classpath:bean.xml")
 public class SpringTest {
     // 自己写的类 用注解配置方便，源码提供的类，由于不能在源码上添加注解，所以使用xml方便（也可以定义一个类来配置）
 
@@ -39,8 +40,8 @@ public class SpringTest {
     private AccountService accountService;
     @Resource(name = "threadLocalUtils")
     private ThreadLocalUtils threadLocalUtils;
-    @Resource(name = "beanFactory")
-    private BeanFactory beanFactory;
+//    @Resource(name = "beanFactory")
+//    private BeanFactory beanFactory;
 
     @Test
     public void findAll() {
@@ -60,7 +61,9 @@ public class SpringTest {
     public void transactionAmount() {
         // accountService.transactionAmount(5, 6, 100);
         // 创建代理对象
-        AccountService accountService = beanFactory.getProxyAccountService();
-        accountService.transactionAmount(5, 6, 100);
+        // AccountService accountService = beanFactory.getProxyAccountService();
+        // accountService.transactionAmount(5, 6, 100);
+        // 使用环绕通知
+        accountService.transactionAmount(6, 5, 100);
     }
 }
